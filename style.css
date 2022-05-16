@@ -1,3 +1,235 @@
 /**
  * Your CSS goes here.
  */
+ 
+* {
+    box-sizing:border-box;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Comic Neue', cursive;
+    font-weight:bold;
+    font-size:large;
+ }
+
+body {
+   background-color: black;
+   max-width: 960px;
+   margin: auto; /*To center*/
+   display:block;
+   height: auto;
+}
+
+img {
+   max-width: 100%;
+}
+
+
+.disclaimer {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+   margin: 2rem 0;
+   gap: 2rem;
+}
+
+.disTop {
+  display: block;
+  align-items: center;
+  width: 70%;
+}
+.disMid {
+  display: none;
+  width: 70%;
+  margin-top: 4rem;
+}
+.disMid .mid {
+   margin-bottom: 2rem;
+}
+
+.disMid img {
+   width: 5rem;
+   margin-bottom: 2rem;
+}
+.madLibs {
+   display: none;
+   border: 1px solid white;
+   padding: 30px;
+   padding-top: 15px;
+   
+   height: auto;
+   position: relative;
+}
+
+.page1, .page2, .page3, .page4, .page6, .page8, .page9 {
+   height:300px;
+   padding: 30px;
+}
+.page5 {
+   height: 350px;
+   padding: 30px;
+}
+
+.page1 div {
+   max-width: 70%;
+}
+
+.page1 .page1-img {
+   position: absolute;
+   top: 1rem;
+   right: 5rem;
+}
+.page1-img img {
+   height: 100%;
+}
+.page2-img {
+   position: absolute;
+   left: 3rem;
+   max-width: 30%;
+}
+.page2-img img {
+   width: 15rem;
+}
+
+.page2-story {
+   position: absolute;
+   max-width: 55%;
+   right:1.5rem;
+}
+
+.page3 img {
+   position:absolute;
+   right:6rem;
+   width: 8rem;
+}
+.page3-story, .page5-story, .page8-story {
+   max-width: 50%;
+   position:absolute;
+}
+
+.page4-story {
+   position: absolute;
+   right:3rem;
+   max-width:50%;
+}
+
+.page4 img {
+   width:11rem;
+   
+}
+
+.page5 img {
+   position:absolute;
+   right: 3rem;
+   width:13rem;
+}
+
+.page6-story {
+   max-width: 50%;
+   position:absolute;
+   right:3rem;
+}
+.page6 img {
+   position:absolute;
+}
+.page7 img {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+   margin-bottom:30px;
+}
+.page7-story {
+   text-align:center;
+}
+.page8 img {
+   position:absolute;
+   right:4rem;
+   width:15rem;
+}
+
+.page9-story {
+   position:absolute;
+   max-width:50%;
+   right:2rem;
+  
+}
+.page9 img {
+   position:absolute;
+   width:14rem;
+}
+.page10 img{
+  
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+   margin-top:15px;
+   margin-bottom:30px;
+}
+.page10-story {
+   text-align:center;
+}
+
+.end-notes {
+   margin-top:50px;
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+}
+
+.madLibsPreview1 p, .madLibsPreview2 p, .madLibsPreview3 p {
+   font-weight:lighter;
+   font-size: small;
+   color:#828282;
+}
+button {
+   padding:10px;
+   font-weight: bold;
+   border-radius: 5px;
+   color: black;
+}
+
+
+button:hover {
+    cursor:pointer;
+ }
+
+footer {
+   font-size: small;
+   text-align:center;
+   margin-top:30px;
+   
+}
+
+#audio3 {
+   width: 200px;
+   height: 25px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+}
+
+input {
+   background-color: black;
+   border: 1px solid white;
+   width: 5rem;
+}
+input:focus {
+   box-shadow: 5px 0 1rem red;
+}
+
+@media screen and (max-width: 700px) {
+   body {
+     background-color: lightgreen;
+   }
+ }
+
+
+
+
