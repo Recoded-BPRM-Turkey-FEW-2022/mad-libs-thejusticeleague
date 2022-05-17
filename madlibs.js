@@ -122,24 +122,5 @@ document.addEventListener("input", (e) => {  //did we put an input anything with
 });
 
 
-document.addEventListener('keydown',(e)=>{
-  if(e.key==='Enter'){
-    console.log(e.key)
-    $(this).next().focus();
-  }
-})
-
-// keypress(function(e) {
-//   if(e.which == 13) {
-//      $(this);
-//   }
-// }); 
-
-/*
-from story.txt get the paragraph >>
-note fetch retun a promis >> pending , fullifed , rejected
-
-*/
-
 
 
