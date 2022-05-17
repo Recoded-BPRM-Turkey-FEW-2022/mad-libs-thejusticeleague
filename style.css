@@ -1,9 +1,5 @@
-/**
- * Your CSS goes here.
- */
  
 * {
-    box-sizing:border-box;
     margin-top: 0;
     margin-bottom: 0;
     padding: 0;
@@ -14,17 +10,16 @@
  }
 
 body {
+   display: flex;
+   margin: auto;
    background-color: black;
-   max-width: 960px;
-   margin: auto; /*To center*/
-   display:block;
-   height: auto;
+   max-width: 90%;
 }
 
 img {
    max-width: 100%;
+   max-height: 100%;
 }
-
 
 .disclaimer {
    display: flex;
@@ -59,33 +54,35 @@ img {
    border: 1px solid white;
    padding: 30px;
    padding-top: 15px;
-   
+   margin-top: 2rem;
    height: auto;
    position: relative;
 }
 
-.page1, .page2, .page3, .page4, .page6, .page8, .page9 {
+/* .page1, .page2, .page3, .page4, .page6, .page8, .page9 {
    height:300px;
    padding: 30px;
-}
-.page5 {
+} */
+/* .page5 {
    height: 350px;
    padding: 30px;
-}
-
+} */
+/* 
 .page1 div {
    max-width: 70%;
 }
-
-.page1 .page1-img {
-   position: absolute;
-   top: 1rem;
-   right: 5rem;
-}
+*/ /*
+ .page1-img {
+   position: absolute; */
+   /* top: 1rem;
+   right: 5rem; */
+   /* max-width: 30%; }*/
+ 
+ /*
 .page1-img img {
-   height: 100%;
-}
-.page2-img {
+   max-height: 300px;
+}  */
+/* .page2-img {
    position: absolute;
    left: 3rem;
    max-width: 30%;
@@ -98,9 +95,9 @@ img {
    position: absolute;
    max-width: 55%;
    right:1.5rem;
-}
+} */
 
-.page3 img {
+/* .page3 img {
    position:absolute;
    right:6rem;
    width: 8rem;
@@ -108,8 +105,8 @@ img {
 .page3-story, .page5-story, .page8-story {
    max-width: 50%;
    position:absolute;
-}
-
+} */
+/* 
 .page4-story {
    position: absolute;
    right:3rem;
@@ -119,23 +116,23 @@ img {
 .page4 img {
    width:11rem;
    
-}
+} */
 
-.page5 img {
+/* .page5 img {
    position:absolute;
    right: 3rem;
    width:13rem;
-}
+} */
 
-.page6-story {
+/* .page6-story {
    max-width: 50%;
    position:absolute;
    right:3rem;
 }
 .page6 img {
    position:absolute;
-}
-.page7 img {
+} */
+/* .page7 img {
    display: block;
    margin-left: auto;
    margin-right: auto;
@@ -144,8 +141,8 @@ img {
 }
 .page7-story {
    text-align:center;
-}
-.page8 img {
+} */
+/* .page8 img {
    position:absolute;
    right:4rem;
    width:15rem;
@@ -160,7 +157,7 @@ img {
 .page9 img {
    position:absolute;
    width:14rem;
-}
+} */
 .page10 img{
   
    display: block;
@@ -182,7 +179,7 @@ img {
    text-align: center;
 }
 
-.madLibsPreview1 p, .madLibsPreview2 p, .madLibsPreview3 p {
+.madLibsPreview0 p, .madLibsPreview1 p, .madLibsPreview2 p {
    font-weight:lighter;
    font-size: small;
    color:#828282;
@@ -224,12 +221,358 @@ input:focus {
    box-shadow: 5px 0 1rem red;
 }
 
-@media screen and (max-width: 700px) {
+/* @media screen and (max-width: 700px) {
    body {
      background-color: lightgreen;
    }
- }
+ } */
+ /* Dilara's Codes */
+
+ .wrapper{
+   display: flex;
+   flex-direction: column;
+   max-width: 98%;
+   margin: auto;
+   
+}
+
+.page1{
+   margin: 1rem  0rem 0rem 0rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   line-height: 1.5rem;
+   text-align: center;
+   flex-wrap: wrap;
+
+   
+}
+ 
+.madLibsEdit1{
+   width: 80%;
+   min-width: 250px;
+   flex-grow: 1;
+   margin: auto;
+} 
+
+.page1-img{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 200px;
+   flex-grow: 1;
+   margin-bottom: 0rem;
+   
+}
+
+.page2{
+
+   margin: 1rem  0rem 0rem 0rem;
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: space-between;
+   align-items: center;
+   line-height: 1.5rem;
+   text-align: center;
+   flex-wrap: wrap;
+
+}
+ 
+.page2-story{
+   width: 70%;
+   min-width: 250px;
+   flex-grow: 1;
+   
+} 
+
+.page2-img{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 200px;
+   flex-grow: 1;
+   margin-bottom: 0rem;
+   margin-top: 1rem;
+   
+}
+
+.page3{
+   margin: 0rem  0rem 0rem 0rem;
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: space-between;
+   align-items: center;
+   line-height: 1.5rem;
+   text-align: center;
+   flex-wrap: wrap-reverse;
+}
+ 
+.page3-story{
+   width: 70%;
+   min-width: 250px;
+   flex-grow: 1;
+   text-align: center;
+   align-self: start;
+   margin-top:1rem ;
+} 
+
+.page3-img{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 200px;
+   max-height: 150px;
+   flex-grow: 1;
+   margin-top: 4rem;
+}
 
 
+.page4{
+   margin: 0rem  0rem 1rem 0rem;
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: space-between;
+   align-items: center;
+   line-height: 1.5rem;
+   text-align: center;
+   flex-wrap: wrap;
+}
+ 
+.page4-story{
+   width: 70%;
+   min-width: 250px;
+   flex-grow: 1;
+   text-align: center;
+   align-self: start;
+   margin-top:1rem ;
+} 
 
+.page4-img{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 200px;
+   height: 300px;
+   flex-grow: 1;
+   
+}
 
+.page5{
+   margin: 0rem  0rem 1rem 0rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   line-height: 1.5rem;
+   text-align: center;
+   flex-wrap: wrap;
+
+}
+ 
+.page5-story{
+   width: 70%;
+   min-width: 250px;
+   flex-grow: 1;
+   margin-top:1rem ;
+   margin: auto;
+   margin-left: auto;
+} 
+
+.page5-img{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 200px;
+   height: 200px;
+   flex-grow: 1;
+   
+}
+.page6{
+   margin: 2rem  0rem 1rem 0rem;
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: space-between;
+   align-items: center;
+   line-height: 1.5rem;
+   text-align: center;
+   flex-wrap: wrap;
+}
+ 
+.page6-story{
+   width: 70%;
+   min-width: 250px;
+   flex-grow: 1;
+   text-align: center;
+   align-self: start;
+   margin-top:1rem ;
+} 
+
+.page6-img{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 200px;
+   height: 200px;
+   flex-grow: 1;  
+}
+
+.page7{
+   margin: 2rem  0rem 1rem 0rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   line-height: 1.5rem;
+   text-align: center;
+   flex-wrap: wrap;
+}
+ 
+.page7-story{
+   width: 50%;
+   min-width: 200px;
+   flex-grow: 1;
+   text-align: center;
+   align-self: start;
+   margin-top:1rem ;
+   margin-bottom:1rem ;
+} 
+
+.page7-img{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 300px;
+   height: 200px;
+   flex-grow: 1;
+}
+.page8{
+   margin: 2rem  0rem 1rem 0rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   line-height: 1.5rem;
+   text-align: center;
+   flex-wrap: wrap;
+   gap: 1rem;
+}
+ 
+.page8-story{
+   width: 60%;
+   min-width: 200px;
+   flex-grow: 1;
+   text-align: center;
+   align-self: start;
+   margin-top:1rem ;
+   margin-bottom:1rem ;
+} 
+
+.page8-img{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 200px;
+   height: 200px;
+   flex-grow: 1;
+   transform: rotate(40deg);
+}
+.page9{
+   margin: 2rem  0rem 1rem 0rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   line-height: 1.5rem;
+   text-align: center;
+   flex-wrap: wrap-reverse;
+}
+ 
+.page9-story{
+   width: 70%;
+   min-width: 200px;
+   flex-grow: 1;
+   text-align: center;
+   align-self: start;
+   margin-top:1rem ;
+   margin-bottom:1rem ;
+} 
+
+.page9-img{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 200px;
+   height: 200px;
+   flex-grow: 1;
+}
+
+.page10{
+   margin: 2rem  0rem 1rem 0rem;
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: space-between;
+   align-items: center;
+   line-height: 1.5rem;
+   text-align: center;
+   flex-wrap: wrap-reverse;
+}
+ 
+.page10-story{
+   width: 60%;
+   min-width: 200px;
+   flex-grow: 1;
+   text-align: center;
+   align-self: start;
+   margin-top:1rem ;
+   margin-bottom:1rem ;
+} 
+.madLibsPreview0{
+   margin-top:1rem;
+   margin-bottom: 1rem;
+   background-color: #100f0f;
+   border-radius: 5px;
+   
+}
+.page10-img{
+   margin-top: 1rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 250px;
+   height: 200px;
+   flex-grow: 1;
+}
+.madLibsEdit{
+   width: 70%;
+}
+.madLibsEdit input{
+   text-align: center;
+   border: none;
+   width: 5rem;
+   border: 0px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.4s;
+  outline: none;
+  font-style: italic;
+  background-color:#100f0f ;
+  border-radius: 5px;
+
+}
+input:focus {
+   background-color:#100f0f ;
+   border: 2px solid #555;
+}
+.madLibsPreview1{
+   margin-top:1rem;
+   margin-bottom: 1rem;
+   background-color: #100f0f;
+   border-radius: 5px;
+}
+.madLibsPreview2{
+   margin-top:1rem;
+   margin-bottom: 1rem;
+   background-color: #100f0f;
+   border-radius: 5px;
+   
+}
