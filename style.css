@@ -59,105 +59,6 @@ img {
    position: relative;
 }
 
-/* .page1, .page2, .page3, .page4, .page6, .page8, .page9 {
-   height:300px;
-   padding: 30px;
-} */
-/* .page5 {
-   height: 350px;
-   padding: 30px;
-} */
-/* 
-.page1 div {
-   max-width: 70%;
-}
-*/ /*
- .page1-img {
-   position: absolute; */
-   /* top: 1rem;
-   right: 5rem; */
-   /* max-width: 30%; }*/
- 
- /*
-.page1-img img {
-   max-height: 300px;
-}  */
-/* .page2-img {
-   position: absolute;
-   left: 3rem;
-   max-width: 30%;
-}
-.page2-img img {
-   width: 15rem;
-}
-
-.page2-story {
-   position: absolute;
-   max-width: 55%;
-   right:1.5rem;
-} */
-
-/* .page3 img {
-   position:absolute;
-   right:6rem;
-   width: 8rem;
-}
-.page3-story, .page5-story, .page8-story {
-   max-width: 50%;
-   position:absolute;
-} */
-/* 
-.page4-story {
-   position: absolute;
-   right:3rem;
-   max-width:50%;
-}
-
-.page4 img {
-   width:11rem;
-   
-} */
-
-/* .page5 img {
-   position:absolute;
-   right: 3rem;
-   width:13rem;
-} */
-
-/* .page6-story {
-   max-width: 50%;
-   position:absolute;
-   right:3rem;
-}
-.page6 img {
-   position:absolute;
-} */
-/* .page7 img {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   width: 50%;
-   margin-bottom:30px;
-}
-.page7-story {
-   text-align:center;
-} */
-/* .page8 img {
-   position:absolute;
-   right:4rem;
-   width:15rem;
-}
-
-.page9-story {
-   position:absolute;
-   max-width:50%;
-   right:2rem;
-  
-}
-.page9 img {
-   position:absolute;
-   width:14rem;
-} */
 .page10 img{
   
    display: block;
@@ -221,12 +122,6 @@ input:focus {
    box-shadow: 5px 0 1rem red;
 }
 
-/* @media screen and (max-width: 700px) {
-   body {
-     background-color: lightgreen;
-   }
- } */
- /* Dilara's Codes */
 
  .wrapper{
    display: flex;
