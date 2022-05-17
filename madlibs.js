@@ -26,11 +26,6 @@ clickBtn2.addEventListener('click', () =>{
   }   
 });
 
-// const inputFilled= document.getElementsByTagName("input")
-
-// inputFilled.addEventListener('input', () => {
-//   inputFilled.style.backgroundColor ="gray"
-// })
 
 // ===================Dilara's Codes End ===================
 
